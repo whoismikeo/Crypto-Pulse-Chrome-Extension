@@ -1,0 +1,344 @@
+a {
+  text-decoration: none;
+  color: #303030;
+}
+
+h1,
+h2,
+h3,
+p {
+  font-family: 'Red Hat Text', sans-serif;
+}
+
+news h2 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: .8rem;
+}
+
+.asset-info h1,
+#btcPrice h2 {
+  font-size: 1.5rem;
+}
+
+.charts-title h3 {
+  font-size: 1rem;
+}
+
+.charts-title {
+  width: 88%;
+  margin: auto;
+}
+
+.charts-title-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.whats-happening {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+#clock {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: auto;
+}
+
+.smellegram {
+  margin-left: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+hr {
+  display: block;
+  margin-top: -10px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #acacac;
+}
+
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 50vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 auto;
+}
+
+.news-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9 {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  width: 350px;
+  max-height: auto;
+  border-radius: 20px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.1);
+          box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.1);
+  margin-top: 20px;
+}
+
+.card1:hover, .card1:focus,
+.card2:hover,
+.card2:focus,
+.card3:hover,
+.card3:focus,
+.card4:hover,
+.card4:focus,
+.card5:hover,
+.card5:focus,
+.card6:hover,
+.card6:focus,
+.card7:hover,
+.card7:focus,
+.card8:hover,
+.card8:focus,
+.card9:hover,
+.card9:focus {
+  -webkit-transform: scale3d(1.01, 1.01, 1);
+          transform: scale3d(1.01, 1.01, 1);
+}
+
+.fml {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin: -5px 10px 0px 10px;
+}
+
+.fml p {
+  position: absolute;
+  top: 85px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8,
+#img9 {
+  max-width: 125px;
+  height: auto;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.cool-stuff {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 350px;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.fear-greed {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.1);
+          box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.1);
+  margin-bottom: 5%;
+}
+
+.fear-greed:hover, .fear-greed:focus {
+  -webkit-transform: scale3d(1.01, 1.01, 1);
+          transform: scale3d(1.01, 1.01, 1);
+}
+
+.satoshiquote {
+  border-left: 5px solid #acacac;
+  margin-top: -5px;
+}
+
+.satoshiquote
+p,
+footer {
+  padding: 0px 10px 0px 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+cards {
+  width: 88%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.btc,
+.cosmos,
+.chainlink,
+.ethereum {
+  display: -ms-grid;
+  display: grid;
+  max-width: 325px;
+  min-width: 250px;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: minmax(50px, 60px) 1fr;
+      grid-template-rows: minmax(50px, 60px) 1fr;
+  grid-template: "info" "chart";
+  border-radius: 30px;
+  margin-top: 30px;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.btc:hover, .btc:focus,
+.cosmos:hover,
+.cosmos:focus,
+.chainlink:hover,
+.chainlink:focus,
+.ethereum:hover,
+.ethereum:focus {
+  -webkit-transform: scale3d(1.01, 1.01, 1);
+          transform: scale3d(1.01, 1.01, 1);
+}
+
+.btc {
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(247, 147, 26, 0.15);
+          box-shadow: 10px 10px 20px 1px rgba(247, 147, 26, 0.15);
+}
+
+.cosmos {
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.15);
+          box-shadow: 10px 10px 20px 1px rgba(46, 49, 72, 0.15);
+}
+
+.chainlink {
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(42, 89, 217, 0.15);
+          box-shadow: 10px 10px 20px 1px rgba(42, 89, 217, 0.15);
+}
+
+.ethereum {
+  -webkit-box-shadow: 10px 10px 20px 1px rgba(89, 156, 237, 0.15);
+          box-shadow: 10px 10px 20px 1px rgba(89, 156, 237, 0.15);
+}
+
+.asset-info {
+  grid-area: info;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5% 0 5%;
+}
+
+.title {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+card h1 {
+  margin-left: 10px;
+}
+
+#btcChart,
+#cosmosChart,
+#ethereumChart,
+#chainlinkChart {
+  grid-area: chart;
+  border-radius: 0px 0px 30px 30px;
+  margin-top: auto;
+}
+
+@media screen and (max-width: 584px) {
+  .btc,
+  .cosmos,
+  .chainlink,
+  .ethereum {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 580px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

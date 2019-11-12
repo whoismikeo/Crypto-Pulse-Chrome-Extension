@@ -1,0 +1,261 @@
+/// Mixins ///
+
+@mixin cardHoverEffect {
+  transition: transform .5s;
+  
+    &:hover,
+    &:focus {
+      transform: scale3d(1.01, 1.01, 1);
+    }
+}
+
+/// Fonts ///
+  a {
+    text-decoration: none;
+    color: #303030;
+  }
+  
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: 'Red Hat Text', sans-serif;
+  }
+
+  news h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: .8rem;
+  }
+
+.asset-info h1,
+#btcPrice h2 {
+    font-size: 1.5rem;
+}
+
+.charts-title h3 {
+  font-size: 1rem;
+}
+
+/// Section Headers ///
+.charts-title {
+  width: 88%;
+  margin: auto;
+}
+
+.charts-title-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.whats-happening {
+  margin-top: -20px;
+  margin-bottom: 10px;
+}
+
+#clock {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-left: auto;
+}
+
+.smellegram {
+margin-left: 5px;
+align-self: center;
+}
+
+hr { 
+  display: block;
+  margin-top: -10px;
+  overflow: hidden;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #acacac;
+}
+
+
+/// News Cards ///
+.news {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 90%;
+  height: 50vh;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.news-container {
+  // display: flex;
+  // flex-direction: row;
+  justify-content: center;
+  justify-self: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8,
+.card9 {
+  @include cardHoverEffect();
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-content: space-between;
+  width: 350px;
+  max-height: auto;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 10px 10px 20px 1px rgba(46,49,72,.1);
+  margin-top: 20px
+}
+
+.fml {
+  display: flex;
+  align-self: center;
+  margin: -5px 10px 0px 10px;
+}
+
+.fml p {
+  position: absolute;
+  top: 85px;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6,
+#img7,
+#img8,
+#img9 {
+  max-width: 125px;
+  height: auto;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.cool-stuff {
+  display: flex;
+  flex-direction: column;
+  // width: 20%;
+  max-width: 350px;
+  min-width: 300px;
+  margin-top: 20px;
+}
+
+.fear-greed {
+  @include cardHoverEffect();
+  width: 100%;
+  // min-width: 300px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px 1px rgba(46,49,72,.1);
+  margin-bottom: 5%;
+
+}
+
+.satoshiquote {
+  border-left: 5px solid #acacac;
+  margin-top: -5px;
+}
+
+.satoshiquote
+p,
+footer {
+  padding: 0px 10px 0px 10px;
+}
+
+/// Card Container ///
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/// Cards ///
+cards {
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+
+.btc,
+.cosmos,
+.chainlink,
+.ethereum {
+    display: grid;
+    max-width: 325px;
+    min-width: 250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(50px, 60px) 1fr;
+    grid-template: 
+        "info"
+        "chart";
+    border-radius: 30px;
+    margin-top: 30px;
+    @include cardHoverEffect();
+}
+
+.btc {
+    box-shadow: 10px 10px 20px 1px rgba(247,147,26,.15);
+  }
+
+
+.cosmos {
+    box-shadow: 10px 10px 20px 1px rgba(46,49,72,.15);
+}
+
+.chainlink {
+    box-shadow: 10px 10px 20px 1px rgba(42, 89, 217, .15);
+}
+
+.ethereum {
+    box-shadow: 10px 10px 20px 1px rgba(89, 156, 237, .15);
+}
+
+.asset-info {
+    grid-area: info;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+}
+
+.title {
+    display: inline-flex;
+}
+
+card h1 {
+    margin-left: 10px;
+}
+
+/// Charts ///
+#btcChart,
+#cosmosChart,
+#ethereumChart,
+#chainlinkChart {
+    grid-area: chart;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: auto;
+}
+
+/// Media Queries ///
+@media screen and (max-width: 584px) {
+  .btc,
+  .cosmos,
+  .chainlink,
+  .ethereum {
+    margin: 0 auto;
+    margin-top: 30px;
+    max-width: 580px;
+  }
+}
